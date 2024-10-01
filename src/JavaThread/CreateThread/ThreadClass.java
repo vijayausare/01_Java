@@ -1,8 +1,9 @@
-package JavaThread;
+package JavaThread.CreateThread;
 
 public class ThreadClass extends  Thread{
 
     public ThreadClass(String name){
+        // set thread name
         super(name);
     }
     @Override

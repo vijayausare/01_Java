@@ -1,4 +1,4 @@
-package JavaThread;
+package JavaThread.CreateThread;
 
 public class RunnableThread implements Runnable{
     @Override

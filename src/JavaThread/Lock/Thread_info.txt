@@ -1,0 +1,13 @@
+Classes
+1. ReentrantLock => this class is used to avoid the deadlock issue , see the class ReentrantLockExample
+
+
+Methods
+1. Thread.lock                      => waits until the thread get acquired
+2. Thread.tryLock()                 => check if thread can be locked
+3. Thread.tryLock(time, TimeFormat) => waits till time t to lock the thread
+4. Thread.unlock()                  => release the thread resource
+
+Notes
+1. Always release the resource in the finally block
+2. interrupt the thread in the catch block to do further cleaning

@@ -1,4 +1,4 @@
-package JavaThread;
+package JavaThread.CreateThread;
 
 public class Main {
     public static void main(String[] args) {
