@@ -1,4 +1,4 @@
-package Synchronization;
+package JavaThread.Synchronization;
 
 public class Counter {
     private int cnt =  0;

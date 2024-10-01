@@ -1,4 +1,4 @@
-package Synchronization;
+package JavaThread.Synchronization;
 
 public class SynchThread extends Thread{
     private  Counter counter;

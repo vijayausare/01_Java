@@ -1,7 +1,4 @@
-package Synchronization;
-
-import Threads.RunnableThread;
-import Threads.ThreadClass;
+package JavaThread.Synchronization;
 
 public class Main {
     public static void main(String[] args) {
