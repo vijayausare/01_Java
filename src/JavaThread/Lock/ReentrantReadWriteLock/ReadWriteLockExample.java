@@ -6,6 +6,10 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 import java.util.stream.IntStream;
 
 public class ReadWriteLockExample {
+
+    /*
+    * It avoid the blocking of the independent threads like read threads
+    * */
     private int count = 0 ;
 
     private final ReadWriteLock lock = new ReentrantReadWriteLock();
