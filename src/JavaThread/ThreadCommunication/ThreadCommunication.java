@@ -68,6 +68,7 @@ public class ThreadCommunication {
      *      To check if task is completed by the producer we check continuously instead
      *      we ask producer to notify once it is done with task.
      * 3. Methods => wait(), notify(), notifyAll();
+     * https://www.geeksforgeeks.org/inter-thread-communication-java/
      */
 
     public static void main(String[] args) {
