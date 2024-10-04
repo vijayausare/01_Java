@@ -1,4 +1,4 @@
-package JavaThread.Lock.ThreadCommunication;
+package JavaThread.ThreadCommunication;
 
 import java.util.stream.IntStream;
 
@@ -61,7 +61,7 @@ class Consumer implements Runnable {
 
 
 public class ThreadCommunication {
-    /**
+    /*
      * 1. Without proper thread communication CPU wastage can be happened
      *      to avoid this we use ThreadCommunication
      * 2. Suppose we have Producer and consumer
