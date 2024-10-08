@@ -12,6 +12,11 @@ public class ExecuterService {
     public static void main(String[] args) {
 
         long startTime;
+
+        /* this cached thead pools are dynamically adjust their size
+            hreads are created depending upon the task size
+        ExecuterService exe  = Executors.newCachedThreadPool(); */
+
         try (ExecutorService executors = Executors.newFixedThreadPool(9)) {
             startTime = System.currentTimeMillis();
             IntStream.range(1, 10).forEach(number -> {
@@ -27,7 +32,7 @@ public class ExecuterService {
 
             while(!executors.awaitTermination(10, TimeUnit.MILLISECONDS)){
                 System.out.println("Waiting");
-            };
+            }
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
