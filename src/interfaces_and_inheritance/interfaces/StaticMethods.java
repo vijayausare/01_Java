@@ -9,6 +9,8 @@ public interface StaticMethods {
 	 * defined rather than with any object. Every instance of the class shares its
 	 * static methods
 	 */
+	
+	/**IMP: Static methods in interfaces are never inherited.**********************/
 	interface interface1 {
 		void setTime(int hour, int minute, int second);
 
