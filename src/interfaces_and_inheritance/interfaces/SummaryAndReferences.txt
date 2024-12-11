@@ -1,0 +1,12 @@
+1. An interface declaration can contain method signatures, 
+	default methods, static methods and constant definitions. 
+	The only methods that have implementations are default and static methods.
+
+2. A class that implements an interface must implement all the methods declared in the interface.
+
+3. An interface name can be used anywhere a type can be used.
+
+
+
+Links: 
+1. https://docs.oracle.com/javase/tutorial/java/IandI/createinterface.html
