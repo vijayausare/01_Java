@@ -10,7 +10,8 @@ public interface StaticMethods {
 	 * static methods
 	 */
 	
-	/**IMP: Static methods in interfaces are never inherited.**********************/
+	/**IMP: Static methods in interfaces are never inherited. but can be called 
+ 		using the Interface name similar like class static methods**********************/
 	interface interface1 {
 		void setTime(int hour, int minute, int second);
 
