@@ -137,6 +137,20 @@ public class JavaRecordsNotes {
      *      import com.myapp.Record;
      */
 
+    /* =========================================================================
+     * 7. THE SHALLOW IMMUTABILITY TRAP (Gotcha)
+     * =========================================================================
+     * Record fields are final, meaning the reference cannot change.
+     * However, if a field holds a mutable object (like a List), its contents CAN change!
+     */
+    public record Team(String name, java.util.List<String> players) {
+        // BEST PRACTICE: Use the compact constructor to make a defensive, unmodifiable copy.
+        public Team {
+            // This prevents external code from modifying the list after creation
+            players = java.util.List.copyOf(players);
+        }
+    }
+
     // =========================================================================
     // MAIN METHOD TO TEST THE CONCEPTS
     // =========================================================================
